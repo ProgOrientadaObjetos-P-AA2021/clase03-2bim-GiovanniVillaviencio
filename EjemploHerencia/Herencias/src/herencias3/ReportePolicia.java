@@ -19,7 +19,7 @@ public class ReportePolicia extends Reporte {
     public void setPromedioEdades() {
         double suma = 0;
         for(int i =0; i < lista.size(); i++){
-            suma = suma + getLista().get(i).getEdad();
+            suma = suma + lista.get(i).getEdad();
         }
         promedioEdades = suma/lista.size();
     }

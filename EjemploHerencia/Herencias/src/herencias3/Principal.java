@@ -27,11 +27,11 @@ public class Principal {
         listaPolicia.add(pol2);
         
         ReporteDocente rd = new ReporteDocente("0001Doc",listaDocente);
-        
+        rd.setPromedioSueldos();
         ReporteEstudiante re = new ReporteEstudiante("0001Est",listaEstudiante);
-        
+        re.setPromedioMatriculas();
         ReportePolicia rp = new ReportePolicia("0001Pol", listaPolicia);
-        
+        rp.setPromedioEdades();
         System.out.println(rd);
         System.out.println(re);
         System.out.println(rp);

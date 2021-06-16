@@ -20,7 +20,7 @@ public class ReporteEstudiante extends Reporte{
     public void setPromedioMatriculas() {
         double suma = 0;
         for(int i =0; i < lista.size(); i++){
-            suma = suma + getLista().get(i).getMatricula();
+            suma = suma + lista.get(i).getMatricula();
         }
         promedioMatriculas = suma/lista.size();
     }
