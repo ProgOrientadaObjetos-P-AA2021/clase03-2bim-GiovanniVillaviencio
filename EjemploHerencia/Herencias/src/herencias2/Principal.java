@@ -37,7 +37,8 @@ public class Principal {
             case 2:
                 System.out.print("Ingrese el sueldo: ");
                 double suel = sc.nextDouble();
-                Docente d = new Docente(name , ape, edad ,suel);
+                Docente d = new Docente(name , ape, edad);
+                d.setSueldo(suel);
                 System.out.println(d);
                 break;
             default:

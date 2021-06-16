@@ -3,7 +3,7 @@ package herencias2;
 
 public class Docente extends Persona{
     private double sueldo;
-    public Docente(String n, String a, int e, double s){
+    public Docente(String n, String a, int e){
         super(n, a, e);
     }
 
@@ -12,7 +12,8 @@ public class Docente extends Persona{
     }
 
     public void setSueldo(double s) {
-        if(sueldo < 1000){
+        sueldo = s;
+        if(sueldo <= 1000){
             sueldo = 1000;
         } else {
             sueldo = s;
